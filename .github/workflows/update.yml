@@ -3,6 +3,9 @@ name: Update
 on:
   schedule:
     - cron: "20 2 * * *"
+  workflow_dispatch:
+
+
 
 jobs:
   update:
@@ -34,3 +37,5 @@ jobs:
 
             git push
           fi
+
+
